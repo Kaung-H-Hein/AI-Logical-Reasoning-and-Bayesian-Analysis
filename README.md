@@ -33,3 +33,36 @@ Anjali, Brian, and Chen graduated on different days in July, studied distinct su
 
 ### Outcome
 The project demonstrates the construction and reasoning capabilities of a Lambda model-based knowledge base. It highlights the effectiveness of logical reasoning methods in solving constrained problems and explores the trade-offs between accuracy and computational efficiency. This foundational understanding of inference techniques provides a stepping stone for advanced reasoning applications in artificial intelligence.
+
+## 2. Bayesian Networks and Probabilistic Inference
+
+In this mini-project, the aim is to design and evaluate Bayesian networks to model the relationships between weather conditions and human behaviour. The dataset provided includes joint probability distributions for five variables: season, temperature, rain, wearing a coat, and carrying an umbrella.
+
+### Problem Overview
+This project explores how various weather conditions influence decisions such as wearing a coat or carrying an umbrella. The key variables in the model include:
+- Season (Spring, Summer, Autumn, Winter)
+- Temperature (Cold, Mild, Hot)
+- Rain (Raining, Not Raining)
+- Wearing a Coat (Coat, No Coat)
+- Carrying an Umbrella (Umbrella, No Umbrella)
+
+### Project Objectives and Tasks
+1. Design Bayesian Networks:
+- Propose three different Bayesian network structures to model the relationships between the variables.
+- Factorise the joint probability distribution into conditional distributions based on the chosen network structure.
+- Evaluate each network for its ability to explain the joint probability distribution and how the factorisation aligns with the observed data.
+
+2. Perform Inference:
+- Conduct six inference tasks, such as calculating conditional probabilities (e.g., 𝑃(Temperature∣Umbrella), probability of bringing umbrella based on temperature), and compare the results across the different network structures.
+
+3. Evaluate Network Designs using Inference Models:
+- Assess the performance of each network in terms of accuracy, computational efficiency, and how well it captures the underlying causal relationships.
+- Three different inference models were used to evaluate the Bayesian networks:
+- 1. Exact Inference: This method calculates precise probabilities directly from the network. While accurate, it is computationally expensive and best suited for models with relatively few variables and simple structures.
+- 2. Direct Sampling: This approach generates random samples from the Bayesian network to estimate probabilities. It is computationally more efficient than exact inference, though the results are approximate, with a margin of error of ±0.01.
+- 3. Markov Chain Monte Carlo (MCMC): MCMC generates samples through a random walk, where each sample depends on the previous one. It's a powerful method, especially for complex networks, but also computationally intensive. Conditional independence can be enforced using functions like pm.Deterministic, although this becomes complex with high-dimensional arrays.
+
+Outcome
+This project demonstrates the application of Bayesian networks in modelling complex probabilistic relationships, including the factorisation of the joint distribution into conditional probabilities. It highlights how different design choices, such as network structure and inference method, influence the results.
+
+The project also shows the trade-offs between accuracy and computational efficiency. While exact inference is accurate, it is limited in scalability for more complex models. Sampling methods like Direct Sampling and MCMC are more efficient, but they come with slight approximations. Ultimately, the results from these methods offer valuable insights into selecting the most effective model and inference approach for real-world applications in probabilistic reasoning.
