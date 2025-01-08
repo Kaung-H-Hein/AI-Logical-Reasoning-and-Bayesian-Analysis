@@ -1,7 +1,7 @@
 # AI-Logical-Reasoning-and-Bayesian-Analysis
 This repository contains two mini-projects that explore key concepts in artificial intelligence: logical reasoning with knowledge bases and probabilistic reasoning using Bayesian networks. These projects were conducted during my MSc in Artificial Intelligence. The first project focuses on logical reasoning, where a knowledge base is built and used for inference tasks. The second project delves into the design and evaluation of Bayesian networks, applied to weather-related human behaviour prediction. Both projects showcase AI methods for problem-solving and inference, providing a foundational understanding of reasoning techniques in AI.
 
-## 1. Logical Reasoning with Knowledge Bases (Lambda Model)
+## 1. Logical Reasoning with Knowledge Base (Lambda Model)
 
 This project applies logical reasoning and inference techniques to solve a structured problem involving incomplete information about three individuals' graduation dates, subjects, and marks. The knowledge base is built using the Lambda model, a structured approach to representing logical constraints and relationships.
 
