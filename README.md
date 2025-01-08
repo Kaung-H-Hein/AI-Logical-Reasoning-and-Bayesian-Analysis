@@ -58,9 +58,9 @@ This project explores how various weather conditions influence decisions such as
 3. Evaluate Network Designs using Inference Models:
 - Assess the performance of each network in terms of accuracy, computational efficiency, and how well it captures the underlying causal relationships.
 - Three different inference models were used to evaluate the Bayesian networks:
-- 1. Exact Inference: This method calculates precise probabilities directly from the network. While accurate, it is computationally expensive and best suited for models with relatively few variables and simple structures.
-- 2. Direct Sampling: This approach generates random samples from the Bayesian network to estimate probabilities. It is computationally more efficient than exact inference, though the results are approximate, with a margin of error of ±0.01.
-- 3. Markov Chain Monte Carlo (MCMC): MCMC generates samples through a random walk, where each sample depends on the previous one. It's a powerful method, especially for complex networks, but also computationally intensive. Conditional independence can be enforced using functions like pm.Deterministic, although this becomes complex with high-dimensional arrays.
+i. Exact Inference: This method calculates precise probabilities directly from the network. While accurate, it is computationally expensive and best suited for models with relatively few variables and simple structures.
+ii. Direct Sampling: This approach generates random samples from the Bayesian network to estimate probabilities. It is computationally more efficient than exact inference, though the results are approximate, with a margin of error of ±0.01.
+iii. Markov Chain Monte Carlo (MCMC): MCMC generates samples through a random walk, where each sample depends on the previous one. It's a powerful method, especially for complex networks, but also computationally intensive. Conditional independence can be enforced using functions like pm.Deterministic, although this becomes complex with high-dimensional arrays.
 
 ### Outcome
 This project demonstrates the application of Bayesian networks in modelling complex probabilistic relationships, including the factorisation of the joint distribution into conditional probabilities. It highlights how different design choices, such as network structure and inference method, influence the results.
