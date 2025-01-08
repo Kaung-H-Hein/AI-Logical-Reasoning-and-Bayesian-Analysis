@@ -1,5 +1,5 @@
 # AI-Logical-Reasoning-and-Bayesian-Analysis
-This repository explores two foundational concepts in AI: logical reasoning with a knowledge base and probabilistic reasoning using Bayesian networks. This was one of the projects that I conducted during my MSc AI studies. It contain two mini projects: 
+This repository contains two mini-projects that explore key concepts in artificial intelligence: logical reasoning with knowledge bases and probabilistic reasoning using Bayesian networks. These projects were conducted during my MSc in Artificial Intelligence. The first project focuses on logical reasoning, where a knowledge base is built and used for inference tasks. The second project delves into the design and evaluation of Bayesian networks, applied to weather-related human behaviour prediction. Both projects showcase AI methods for problem-solving and inference, providing a foundational understanding of reasoning techniques in AI.
 
 ## 1. Logical Reasoning with Knowledge Bases (Lambda Model)
 
@@ -53,7 +53,7 @@ This project explores how various weather conditions influence decisions such as
 - Evaluate each network for its ability to explain the joint probability distribution and how the factorisation aligns with the observed data.
 
 2. Perform Inference:
-- Conduct six inference tasks, such as calculating conditional probabilities (e.g., 𝑃(Temperature∣Umbrella), probability of bringing umbrella based on temperature), and compare the results across the different network structures.
+- Conduct six inference tasks, such as calculating conditional probabilities (e.g., 𝑃(Temperature∣Umbrella), probability of the temperature given that an umbrella is being carried), and compare the results across the different network structures.
 
 3. Evaluate Network Designs using Inference Models:
 - Assess the performance of each network in terms of accuracy, computational efficiency, and how well it captures the underlying causal relationships.
@@ -62,7 +62,7 @@ This project explores how various weather conditions influence decisions such as
 - 2. Direct Sampling: This approach generates random samples from the Bayesian network to estimate probabilities. It is computationally more efficient than exact inference, though the results are approximate, with a margin of error of ±0.01.
 - 3. Markov Chain Monte Carlo (MCMC): MCMC generates samples through a random walk, where each sample depends on the previous one. It's a powerful method, especially for complex networks, but also computationally intensive. Conditional independence can be enforced using functions like pm.Deterministic, although this becomes complex with high-dimensional arrays.
 
-Outcome
+### Outcome
 This project demonstrates the application of Bayesian networks in modelling complex probabilistic relationships, including the factorisation of the joint distribution into conditional probabilities. It highlights how different design choices, such as network structure and inference method, influence the results.
 
 The project also shows the trade-offs between accuracy and computational efficiency. While exact inference is accurate, it is limited in scalability for more complex models. Sampling methods like Direct Sampling and MCMC are more efficient, but they come with slight approximations. Ultimately, the results from these methods offer valuable insights into selecting the most effective model and inference approach for real-world applications in probabilistic reasoning.
